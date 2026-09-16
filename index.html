@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Storylines Legal</title>
+<style>
+:root{
+  --bg:#faf8f5;
+  --surface:#ffffff;
+  --border:#e6e0d6;
+  --text:#2b2620;
+  --text-dim:#6b6255;
+  --accent:#c1512f;
+  --accent-soft:#f3e2da;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1c1a17;
+    --surface:#242220;
+    --border:#3a352e;
+    --text:#efe9e0;
+    --text-dim:#a89e8f;
+    --accent:#e08560;
+    --accent-soft:#3a2620;
+  }
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Georgia, "Times New Roman", serif;
+  padding:20px;
+  padding-top:48px;
+  padding-bottom:48px;
+  line-height:1.6;
+  margin:0;
+}
+.wrap{max-width:640px;margin:0 auto}
+.eyebrow{
+  font-family:system-ui, sans-serif;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-weight:600;
+  margin:0 0 8px;
+}
+h1{
+  font-family:system-ui, sans-serif;
+  font-size:clamp(28px,6vw,38px);
+  font-weight:700;
+  letter-spacing:-0.01em;
+  margin:0 0 6px;
+}
+.sub{
+  color:var(--text-dim);
+  font-family:system-ui, sans-serif;
+  font-size:14px;
+  margin:0 0 36px;
+}
+nav.toc{
+  display:flex;
+  gap:10px;
+  margin-bottom:40px;
+  font-family:system-ui, sans-serif;
+  font-size:13px;
+}
+nav.toc a{
+  color:var(--text);
+  text-decoration:none;
+  padding:8px 14px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:var(--surface);
+}
+section{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:32px;
+  margin-bottom:28px;
+  scroll-margin-top:20px;
+}
+section h2{
+  font-family:system-ui, sans-serif;
+  font-size:22px;
+  font-weight:700;
+  margin:0 0 4px;
+}
+section .updated{
+  font-family:system-ui, sans-serif;
+  font-size:12px;
+  color:var(--text-dim);
+  margin:0 0 24px;
+}
+section h3{
+  font-family:system-ui, sans-serif;
+  font-size:15px;
+  font-weight:700;
+  margin:24px 0 8px;
+  color:var(--accent);
+}
+section p{margin:0 0 14px;max-width:65ch}
+section ul{margin:0 0 14px;padding-left:1.2em}
+section li{margin-bottom:6px}
+code{
+  font-family:ui-monospace, "SF Mono", Menlo, monospace;
+  background:var(--accent-soft);
+  padding:1px 6px;
+  border-radius:4px;
+  font-size:.92em;
+}
+footer{
+  font-family:system-ui, sans-serif;
+  font-size:12px;
+  color:var(--text-dim);
+  text-align:center;
+  margin-top:20px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">AI Storylines</p>
+  <h1>Terms of Service &amp; Privacy Policy</h1>
+  <p class="sub">A personal, single-operator project that generates and publishes short AI storyline videos.</p>
+
+  <nav class="toc">
+    <a href="#terms">Terms of Service</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="updated">Last updated September 16, 2026</p>
+
+    <p>AI Storylines is a personal automation project operated by a single individual ("the operator"). It generates short narrated video stories and publishes them to the operator's own YouTube and TikTok accounts. It is not a public app, product, or service offered to other users &mdash; no one else creates an account, logs in, or submits content through it.</p>
+
+    <h3>What it does</h3>
+    <ul>
+      <li>Generates story scripts and scene descriptions with an AI language model.</li>
+      <li>Generates narration audio, images, and video clips for each scene with third-party AI providers.</li>
+      <li>Assembles the results into a single video file.</li>
+      <li>Publishes that video to the operator's own connected YouTube and TikTok accounts using each platform's official API.</li>
+    </ul>
+
+    <h3>Use of platform APIs</h3>
+    <p>Where this project connects to TikTok's Content Posting API, it does so only to publish content that the operator generated to accounts the operator owns and authorized directly through TikTok's own OAuth login. It does not access, read, or act on any other person's TikTok account or content.</p>
+
+    <h3>No warranty</h3>
+    <p>This is a personal, non-commercial project provided as-is, without warranty of any kind.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last updated September 16, 2026</p>
+
+    <p>This project does not collect, store, or process personal data belonging to anyone other than its operator.</p>
+
+    <h3>What is stored</h3>
+    <ul>
+      <li>API keys and OAuth tokens the operator supplies, kept locally on the operator's own machine in a <code>.env</code> file and a <code>credentials/</code> folder that are never shared or uploaded anywhere.</li>
+      <li>Generated video files, images, and audio, stored locally until published.</li>
+    </ul>
+
+    <h3>What is not collected</h3>
+    <p>No visitor analytics, cookies, tracking pixels, or third-party advertising identifiers are used by this project. It has no public sign-up flow and no database of user accounts.</p>
+
+    <h3>Third-party services</h3>
+    <p>Generating and publishing a video involves sending prompts and files to third-party AI and platform APIs (for script, narration, image, and video generation, and for publishing to YouTube and TikTok). Each of those providers handles data under its own privacy policy.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this project can be sent to the operator at the email address registered with its TikTok and Google developer accounts.</p>
+  </section>
+
+  <footer>AI Storylines &mdash; a personal project, not a public product.</footer>
+</div>
+</body>
+</html>
